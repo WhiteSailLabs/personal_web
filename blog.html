@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH_BLOG | 技术博客</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="blog.html" class="nav-link active">技术博客</a>
+            <a href="life.html" class="nav-link">生活感悟</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="blog-header">
+            <h1 class="blog-title"><span class="prompt">&gt;_</span> TECH_BLOG</h1>
+            <div class="blog-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">SYSTEM.ONLINE</span>
+                <span class="separator">|</span>
+                <span class="entry-count"><span class="count">4</span> ENTRIES</span>
+            </div>
+        </header>
+
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-icon">&lt;/&gt;</div>
+                <h3>Frontend</h3>
+                <p class="category-tags">React / Vue / Next.js</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🗃</div>
+                <h3>Backend</h3>
+                <p class="category-tags">Node.js / Python / Go</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">⬡</div>
+                <h3>DevOps</h3>
+                <p class="category-tags">Docker / K8s / CI/CD</p>
+            </div>
+        </div>
+
+        <div class="post-list">
+            <article class="post-card">
+                <div class="post-header">
+                    <h2 class="post-title">React 并发渲染深度解析</h2>
+                    <span class="post-badge" data-status="published">PUBLISHED</span>
+                </div>
+                <p class="post-excerpt">深入探讨 React 18 的并发特性，包括 Suspense、Transitions 和 Server Components 的实现原理与最佳实践...</p>
+                <div class="post-footer">
+                    <div class="post-tags">
+                        <span class="tag">[React]</span>
+                        <span class="tag">[Performance]</span>
+                    </div>
+                    <span class="post-date">2026.03.28</span>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <h2 class="post-title">构建高性能微服务架构</h2>
+                    <span class="post-badge" data-status="published">PUBLISHED</span>
+                </div>
+                <p class="post-excerpt">从单体应用到微服务的演进之路，探讨服务拆分、通信机制、分布式事务处理等核心问题...</p>
+                <div class="post-footer">
+                    <div class="post-tags">
+                        <span class="tag">[Architecture]</span>
+                        <span class="tag">[Backend]</span>
+                    </div>
+                    <span class="post-date">2026.03.15</span>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <h2 class="post-title">TypeScript 类型体操实战</h2>
+                    <span class="post-badge" data-status="published">PUBLISHED</span>
+                </div>
+                <p class="post-excerpt">通过有趣的类型体操题目，掌握高级类型技巧，理解 TypeScript 类型系统的强大之处...</p>
+                <div class="post-footer">
+                    <div class="post-tags">
+                        <span class="tag">[TypeScript]</span>
+                        <span class="tag">[Advanced]</span>
+                    </div>
+                    <span class="post-date">2026.03.10</span>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <h2 class="post-title">容器化最佳实践</h2>
+                    <span class="post-badge" data-status="draft">DRAFT</span>
+                </div>
+                <p class="post-excerpt">从 Dockerfile 编写到 Kubernetes 部署，分享生产级容器化的经验和坑点...</p>
+                <div class="post-footer">
+                    <div class="post-tags">
+                        <span class="tag">[Docker]</span>
+                        <span class="tag">[DevOps]</span>
+                    </div>
+                    <span class="post-date">2026.02.28</span>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>// SYSTEM_READY · CONNECTION_ESTABLISHED</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
