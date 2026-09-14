@@ -58,6 +58,13 @@ body {
     margin: 0 auto;
 }
 
+.eyebrow {
+    color: #2457ff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
 .avatar {
     margin-bottom: 2.5rem;
 }
@@ -91,6 +98,36 @@ body {
     margin-bottom: 2.5rem;
 }
 
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.primary-action,
+.secondary-action {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.65rem 1rem;
+    border: 1px solid #111111;
+    color: #111111;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.primary-action {
+    background: #2457ff;
+    color: #ffffff;
+    border-color: #2457ff;
+}
+
+.primary-action:hover,
+.secondary-action:hover {
+    transform: translateY(-2px);
+}
+
 /* 社交链接 */
 .social-links {
     display: flex;
@@ -114,41 +151,86 @@ body {
     margin: 3rem 0;
 }
 
-/* 影集画廊 */
-.gallery-section {
+/* 项目 */
+.projects-section {
     padding: 1rem 0 3rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
 }
 
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    text-align: center;
-    margin-bottom: 2.5rem;
+    margin-top: 0.35rem;
 }
 
-.gallery-grid {
+.project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
-.gallery-item {
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #f9fafb;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.project-card {
+    border: 1px solid #111111;
+    padding: 1.5rem;
+    display: flex;
+    min-height: 260px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.gallery-item:hover {
+.project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 0 #111111;
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+.project-card-featured {
+    min-height: 300px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #2457ff;
+    background: #f3f6ff;
+}
+
+.project-card h3 {
+    font-size: 1.7rem;
+    margin: 0.5rem 0 0.75rem;
+}
+
+.project-card p {
+    color: #4b5563;
+}
+
+.project-status {
+    color: #2457ff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.project-tags {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-tags li {
+    border: 1px solid #aabcfb;
+    background: #ffffff;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.project-link {
+    color: #2457ff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 1.5rem;
 }
 
 /* 页脚 */
@@ -186,7 +268,7 @@ body {
         font-size: 2rem;
     }
 
-    .gallery-grid {
+    .project-grid {
         grid-template-columns: 1fr;
     }
 }
